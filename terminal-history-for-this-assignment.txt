@@ -1,0 +1,246 @@
+Taylors-MacBook-Air:cloneExample Taylor$ cd ..
+Taylors-MacBook-Air:Projects Taylor$ man date
+Taylors-MacBook-Air:Projects Taylor$ git clone git@github.com:trmiller10/TIY-Terminal-Velocity.git
+Cloning into 'TIY-Terminal-Velocity'...
+Warning: Permanently added the RSA host key for IP address '192.30.252.131' to the list of known hosts.
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Checking connectivity... done.
+Taylors-MacBook-Air:Projects Taylor$ ls
+TIY-Terminal-Velocity	cloneExample		gitTests
+Taylors-MacBook-Air:Projects Taylor$ ls > list-projects-directory.txt 
+Taylors-MacBook-Air:Projects Taylor$ ls
+TIY-Terminal-Velocity		gitTests
+cloneExample			list-projects-directory.txt
+Taylors-MacBook-Air:Projects Taylor$ mv list-projects-directory.txt ./TIY-Terminal-Velocity
+Taylors-MacBook-Air:Projects Taylor$ cd ./TIY-Terminal-Velocity/
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ ls
+README.md			list-projects-directory.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ cd ..
+Taylors-MacBook-Air:Projects Taylor$ cd ./TIY-Terminal-Velocity/
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ nano joke.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ nano joke.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ ls
+README.md			list-projects-directory.txt
+joke.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git add joke.txt 
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git add list-projects-directory.txt 
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ ls > workingDirectory.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ ls
+README.md			list-projects-directory.txt
+joke.txt			workingDirectory.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git add workingDirectory.txt 
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git log
+commit 546c288709a317d853eab64d87d49ef80aff577f
+Author: trmiller10 <trmiller10@gmail.com>
+Date:   Mon Apr 11 13:47:28 2016 -0400
+
+    Initial commit
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ man hosts
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ man gethostents
+No manual entry for gethostents
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ which /etc/hosts
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ cd ~
+Taylors-MacBook-Air:~ Taylor$ ls
+Desktop		Downloads	Movies		Pictures	Public
+Documents	Library		Music		Projects	tiy
+Taylors-MacBook-Air:~ Taylor$ nano /etc/hosts
+Taylors-MacBook-Air:~ Taylor$ cd ./Projects/TIY-Terminal-Velocity/
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ nano hosts.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ man date
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ date -r
+date: option requires an argument -- r
+usage: date [-jnu] [-d dst] [-r seconds] [-t west] [-v[+|-]val[ymwdHMS]] ... 
+            [-f fmt date | [[[mm]dd]HH]MM[[cc]yy][.ss]] [+format]
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ date +%s
+1460397925
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ date +%s > date.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ ls
+README.md			joke.txt
+date.txt			list-projects-directory.txt
+hosts.txt			workingDirectory.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git add hosts.txt 
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git add date.txt 
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   date.txt
+	new file:   hosts.txt
+	new file:   joke.txt
+	new file:   list-projects-directory.txt
+	new file:   workingDirectory.txt
+
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ cat *.txt
+1460397933
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1       localhost
+255.255.255.255 broadcasthost
+::1             localhost
+If you ever get cold, just stand in a corner.  They're usually around 90 degrees.
+TIY-Terminal-Velocity
+cloneExample
+gitTests
+list-projects-directory.txt
+README.md
+joke.txt
+list-projects-directory.txt
+workingDirectory.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ ls *.txt
+date.txt			list-projects-directory.txt
+hosts.txt			workingDirectory.txt
+joke.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ ls *.txt > list\ of\ txt\ files.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ ls
+README.md			list of txt files.txt
+date.txt			list-projects-directory.txt
+hosts.txt			workingDirectory.txt
+joke.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ open list\ of\ txt\ files.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   date.txt
+	new file:   hosts.txt
+	new file:   joke.txt
+	new file:   list-projects-directory.txt
+	new file:   workingDirectory.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	list of txt files.txt
+
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git add list\ of\ txt\ files.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   date.txt
+	new file:   hosts.txt
+	new file:   joke.txt
+	new file:   list of txt files.txt
+	new file:   list-projects-directory.txt
+	new file:   workingDirectory.txt
+
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ cd ~
+Taylors-MacBook-Air:~ Taylor$ which java
+/usr/bin/java
+Taylors-MacBook-Air:~ Taylor$ which javac
+/usr/bin/javac
+Taylors-MacBook-Air:~ Taylor$ cd ./Projects/TIY-Terminal-Velocity/
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ ls
+README.md			list of txt files.txt
+date.txt			list-projects-directory.txt
+hosts.txt			workingDirectory.txt
+joke.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ nano where-is-my-java.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ open where-is-my-java.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   date.txt
+	new file:   hosts.txt
+	new file:   joke.txt
+	new file:   list of txt files.txt
+	new file:   list-projects-directory.txt
+	new file:   workingDirectory.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	where-is-my-java.txt
+
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git add where-is-my-java.txt 
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git status 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   date.txt
+	new file:   hosts.txt
+	new file:   joke.txt
+	new file:   list of txt files.txt
+	new file:   list-projects-directory.txt
+	new file:   where-is-my-java.txt
+	new file:   workingDirectory.txt
+
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ nano terminal-history-for-this-assignment.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git add terminal-history-for-this-assignment.txt 
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   date.txt
+	new file:   hosts.txt
+	new file:   joke.txt
+	new file:   list of txt files.txt
+	new file:   list-projects-directory.txt
+	new file:   terminal-history-for-this-assignment.txt
+	new file:   where-is-my-java.txt
+	new file:   workingDirectory.txt
+
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git rm terminal-history-for-this-assignment.txt 
+error: the following file has changes staged in the index:
+    terminal-history-for-this-assignment.txt
+(use --cached to keep the file, or -f to force removal)
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git rm -f terminal-history-for-this-assignment.txt 
+rm 'terminal-history-for-this-assignment.txt'
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ ls
+README.md			list of txt files.txt
+date.txt			list-projects-directory.txt
+hosts.txt			where-is-my-java.txt
+joke.txt			workingDirectory.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   date.txt
+	new file:   hosts.txt
+	new file:   joke.txt
+	new file:   list of txt files.txt
+	new file:   list-projects-directory.txt
+	new file:   where-is-my-java.txt
+	new file:   workingDirectory.txt
+
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git commit -m "Created date.txt, hosts.txt, joke.txt, list of txt files.txt, list-projects-directory.txt, where-is-my-java.txt, workingDirectory.txt."
+[master 7c8fa1f] Created date.txt, hosts.txt, joke.txt, list of txt files.txt, list-projects-directory.txt, where-is-my-java.txt, workingDirectory.txt.
+ 7 files changed, 27 insertions(+)
+ create mode 100644 date.txt
+ create mode 100644 hosts.txt
+ create mode 100644 joke.txt
+ create mode 100644 list of txt files.txt
+ create mode 100644 list-projects-directory.txt
+ create mode 100644 where-is-my-java.txt
+ create mode 100644 workingDirectory.txt
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+Taylors-MacBook-Air:TIY-Terminal-Velocity Taylor$ 
