@@ -1,0 +1,4 @@
+README.md
+joke.txt
+list-projects-directory.txt
+workingDirectory.txt
